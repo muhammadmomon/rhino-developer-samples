@@ -1,0 +1,13 @@
+import Rhino
+import scriptcontext
+import System.Guid
+
+def ReadLayer():
+
+    for index in range(86):
+        LayerName = scriptcontext.doc.Layers[index].Name
+        print "Index ",index ," ", LayerName
+
+if __name__ == "__main__":
+    
+    ReadLayer()
